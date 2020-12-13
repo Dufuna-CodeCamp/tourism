@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href ="style.css" rel= "stylesheet"/>
+    <title>Document</title>
+</head>
+</head>
+<body>
+    <header>
+        <div class="nav-section">
+            <div id="nav-logo">
+                <h3>TourPoint</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Call Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<body>
+    <div class="all">
+        <div class="contender">
+        <div class="images">
+            <img src="https://res.cloudinary.com/matsxript/image/upload/v1568756300/Devpoint/Team_illus_mz0par.svg" alt ="team illustration"  class="second-image top-margin" />
+            <blockquote class="top-margin"><em><b>"Alone we can do so little; 
+                together we can do so much"</b></em>
+                    <legend>-<em><b> Helen Keller</b></em></legend></blockquote>
+              
+        </div>
+        <div class="form-area">
+            <h2>Welcome to <b>TourPoint</b></h2>
+            <p>New to TourPoint? create an account 
+                and be on the path of creating a wonderful moment</p>
+                <form>
+                    <div>
+                    <label for="fullname">Full Name: </label>
+                    <input type="text" 
+                    name="fullname" id ="fname" oninput="nameTwo()" placeholder="Enter your surname first"/>
+                    <small><p id="valid1"></p></small>
+                </div>
+                <div>
+                    <label for="email">E-mail: </label>
+                    <input type="email" 
+                    name="email" id ="email" oninput="emailPart()" placeholder="Enter your E-mail"/>
+                    <small><p id="valid2"></p></small>
+                </div>
+                <div>
+                    <label for="password">Password: </label>
+                    <input type="password" 
+                    name="password" id = "pswrd" oninput="passWord()" placeholder="Enter your password"/>
+                    <small><p id="valid3"></p></small>
+                </div>
+                <div class ="inline">
+                 <input type="checkbox" class="checkbox"/>
+                 <small class="tandc">By signing I agree to
+                     <a href ="#">Terms and Conditions</a></small>
+                </div>
+                <div>
+                    <input type = "submit" class="submit" value="Sign Up"/>
+                </div>
+                <div>
+                    <small class="tandc">Already have an account? <a href="#">Sign in here</a></small>
+                </div>
+                </form>
+        </div>
+        </div>
+    </div>
+    <script src="../javaScript/main.js"></script>
+</body>
+<footer>
+    <div class="footer">
+        <ul>
+            <li><a href="../htmlForms/contact.html">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+    </div>
+    <div class="footer newsletter">
+        <h3 class="kt">Sign up for our Newsletter</h3>
+        <div class="newsletter">
+            <form id="send">
+                <input type="email" name="email" id="letter" placeholder="Enter your email address">
+                <button type="submit">SUBMIT</button>
+                <span class="error-message"></span>
+            </form>
+        </div>
+    </div>
+    <div class="footer logo">
+        <h3 class="kt">CONNECT WITH US</h3>
+        <ul class="social-contact">
+            <li><a href="http//:www.facebook.com"><img src="../images/facebook-logo.png" alt="facebook-logo"></i></a></li>
+           <li><a href="http//:www.twiiter.com"><img src="../images/twiiter-logo.png " alt="twiiter-logo"></a></li>
+           <li><a href="http//:www.instagram.com"><img src="../images/instagram-logo.jpg" class="insta" alt="instagram-logo"></a></li>
+          </ul>
+    </div><br>
+<p class="kt"> Copyright &copy; 2020 mixstore.com. All rights reserved.</p>
+</footer>
+</html>
