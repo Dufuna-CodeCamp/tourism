@@ -145,15 +145,14 @@ legend{
     margin-bottom:10px;
     color: grey;
 }
-
-/* .form-area .submit,
-.form-login input,
-#fname, #date, #email, #persons, #remarks, #pswrd {
+.form-area,
+.form-login,
+#fname, #date, #email, #persons, #remarks {
     padding :10px;
     border-top:1px solid grey;
     border-radius: 10px;
     width:25vw;
-} */
+}
 
 .checkbox{
     height:15px;
