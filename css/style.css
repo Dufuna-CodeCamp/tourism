@@ -257,6 +257,11 @@ footer a {
     color: white;
     text-decoration: none;
  }
+ .error-message {
+    color: red;
+    font-size: 0.8em;
+    display: block;
+ }
 
  footer  {
     background-color:blueviolet;
