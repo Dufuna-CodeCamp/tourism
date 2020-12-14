@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href ="../css/style.css" rel= "stylesheet"/>
+    <title>Tourist Reservation Form</title>
+</head>
+<body>
+    <header>
+        <div class="nav-section">
+            <div id="nav-logo">
+                <h3>TourPoint</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Call Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="all">
+        <div class="contender">
+            <form class="information">
+                <p class="information-p">Tourist Reservation Form</p>
+                <div class="container">
+                    <div class="container-box">
+                        <label for="fname">Full Name:<span class="required">*</span></label><br>
+                        <input type="text" name="fname" id="fname" placeholder="Enter your Surname first" ><br>
+                        <small><p id="error"></p></small>
+                    </div>
+                    <div  class="container-box">
+                        <label for="email">Email:<span class="required">*</span></label><br>
+                        <input type="text" name="email" id="email" placeholder="Enter your E-mail"><br>
+                        <small><p id="error1"></p></small>
+                    </div>
+                    
+                    <div class="container-box">
+                        <label for="date">Arrival Date:<span class="required">*</span></label><br>
+                        <input type="date" name="date" id="date"><br>
+                        <small><p id="error2"></p></small>
+                    </div>
+                    <div class="container-box">
+                        <label for="persons">Number of Persons:<span class="required">*</span></label><br>
+                        <input type="text" name="persons" id="persons"><br>
+                        <small><p id="error3"></p></small>
+                    </div>
+                    <div class="container-box" id="package">
+                        <label>Select your package:<span class="required">*</span></label><br>
+                        <input type="radio" name="package" id="none" value="None">
+                        <label for="none">None</label><br>
+                        <input type="radio" name="package" id="gold" value="Gold">
+                        <label for="gold">Gold</label><br>
+                        <input type="radio" name="package" id="silver" value="Silver">
+                        <label for="type3">Silver</label><br>
+                        <input type="radio" name="package" id="platinum" value="Platinum">
+                        <label for="platinum">Platinum</label>
+                        <small><p id="error4"></p></small>
+                    </div>
+                    <div class="container-box" id="treats">
+                        <label>What would you want us to avail?<span class="required">*</span></label><br>
+                        <input type="checkbox" name="boarding" id="boarding" value="boarding">
+                        <label for="boarding">Boarding</label><br>
+                        <input type="checkbox" name="fooding" id="fooding" value="fooding">
+                        <label for="fooding">Fooding</label><br>
+                        <input type="checkbox" name="sight" id="sight" value="sight">
+                        <label for="sight">Sight Seeing</label><br>
+                        <input type="checkbox" name="others" id="others" value="others">
+                        <label for="others">Others</label>
+                        <small><p id="error5"></p></small>
+                    </div>
+                    <div class="container-box">
+                        <label for="remarks">Remarks:</label><br>
+                        <textarea name="remarks" id="remarks" cols="30" rows="3"></textarea>
+                    </div>
+                    <div class="container-box" id="terms">
+                        <label>Terms and Conditions<span class="required">*</span></label><br>
+                        <input type="radio" name="terms" id="agree" value="Agree">
+                        <label for="agree">Agree</label><br>
+                        <input type="radio" name="terms" id="disagree" value="Disagree">
+                        <label for="disagree">Disagree</label>
+                        <small><p id="error6"></p></small>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" id="reservation" value="MAKE A RESERVATION">
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><a href="../htmlForms/contact.html">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer newsletter">
+            <h3 class="kt">Sign up for our Newsletter</h3>
+            <div class="newsletter">
+                <form id="send">
+                    <input type="email" name="email" id="letter" placeholder="Enter your email address">
+                    <button type="submit">SUBMIT</button>
+                    <span class="error-message"></span>
+                </form>
+            </div>
+        </div>
+        <div class="footer logo">
+            <h3 class="kt">CONNECT WITH US</h3>
+            <ul class="social-contact">
+                <li><a href="http//:www.facebook.com"><img src="../images/facebook-logo.png" alt="facebook-logo"></a></li>
+               <li><a href="http//:www.twiiter.com"><img src="../images/twiiter-logo.png " alt="twiiter-logo"></a></li>
+               <li><a href="http//:www.instagram.com"><img src="../images/instagram-logo.jpg" class="insta" alt="instagram-logo"></a></li>
+            </ul>
+        </div><br>
+    <p class="kt"> Copyright &copy; 2020 mixstore.com. All rights reserved.</p>
+    </footer>
+    <script src="../javaScript/reservation.js"></script>
+</body>
+</html>

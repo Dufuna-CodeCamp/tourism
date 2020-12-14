@@ -52,12 +52,19 @@
     width:95%;
 }
 .contender{
-    width: 70%;
     margin:10vh auto;
     display:flex;
     border-radius:3px;
     box-shadow:5px 5px 20px;
     padding:50px;
+}
+.contender-login{
+    max-width: 50%;
+    margin:10vh auto;
+    display:flex;
+    border-radius:3px;
+    box-shadow:5px 5px 20px;
+    padding: 50px 10px;
 }
 .images{
     display: flex;
@@ -85,35 +92,65 @@ legend{
 .form-area{
     width:40%;
 }
-.form-area b{
+.form-area b,
+.form-login h2{
     color:blueviolet;
 
 }
-.form-area h2{
+
+.information .information-p {
+    font-size: 27px;
+    font-weight: bold;
+    color: blueviolet;
+    text-align: center;
+}
+.form-area h2,
+.form-login h2{
     font-weight:500;
     text-align: center;
 }
-.form-area p{
+.form-area p,
+.form-login p{
     color:grey;
     width:100%;
     margin-top:1vh;
     text-align: center;
 }
-form{
+.form-area,
+.form-login,
+.information{
     margin-top: 20px;
 }
-form div{
+.form-area div,
+.form-login div{
     margin-bottom:10px;
     display:flex;
     flex-direction: column;
 }
-label{
-    margin-bottom:10px;
+.container{
+    margin-bottom: 10px;
+    width: 100%;
 }
-input{
-    height:6vh;
+.container-box {
+    width: 100%;
+    margin-bottom:10px;
+    color: grey;
+    padding: 10px;
+}
+.form-login{
+    margin: auto;
+}
+.form-area label,
+.form-login label{
+    margin-bottom:10px;
+    color: grey;
+}
+.form-area input,
+.form-login input,
+#fname, #date, #email, #persons, #remarks {
     padding :10px;
     border-top:1px solid grey;
+    border-radius: 10px;
     width:25vw;
 
 }
@@ -126,6 +163,17 @@ input{
     margin-right:5px;
     width:15px;
 }
+#reservation{
+    width: 100%;
+    border:none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color:white;
+    font-weight: bold;
+    font-size:10px;
+    padding: 10px;
+}
+
 .submit{
     border:none;
     background-color: blueviolet;
@@ -139,6 +187,14 @@ input{
 .tandc a{
     text-decoration: none;
     font-weight:300;
+}
+.information p {
+    color: red;
+    font-size: 15px;
+    text-align: left;
+}
+.required{
+    color: red;
 }
 
 /* Footer */
@@ -215,6 +271,7 @@ footer a {
         box-shadow:none;
         margin:auto;
     }
+    
     blockquote{
         display: none;
     }
@@ -230,12 +287,15 @@ footer a {
     .form-area{
         width:100%;
     }
-    .form-area h2{
+    .form-area h2,
+    .form-login h2{
         text-align:center;
     }
-    input{
+    .form-area input,
+    .form-login input,
+    #fname, #date, #email, #persons, #remarks {
         width:95%;
-        border-radius:2px;
+        border-radius:10px;
         box-shadow:0  0.5px gray ;
     }
     .submit{
@@ -245,11 +305,13 @@ footer a {
     .checkbox{
         box-shadow: none;
     }
-    .form-area p{
+    .form-area p,
+    .form-login p{
         text-align: center;
         width: 100%;
     }
 }
+
 @media only screen and (min-width:751px) and (max-width:1100px){
         .images{
             width:35%;
@@ -262,18 +324,37 @@ footer a {
             text-align: center;
 
         }
+        .contender {
+            max-width: 70%;
+        }
         .form-area{
          margin-left:20px;
          width:60%;
         }
-        input{
-            width:90%;
-            height:4vh;
+        .container{
+            display: flex;
+            flex-wrap: wrap;
         }
-        .form-area h2, .form-area p{
+        .container-box {
+            width: 50%;
+            padding: 30px;
+        }
+        .form-area input,
+        .form-login input,
+        #fname, #date, #email, #persons, #remarks {
+            width:90%;
+            border-radius: 10px;
+        }
+        .form-area h2, .form-area p,
+        .form-login h2, .form-login p{
             text-align: center;
             width:100%;
         }
+
+        #reservation{
+            font-size: 20px;
+        }
+
         .second-image{
             width:100%;
             height:20vh;
@@ -286,3 +367,21 @@ footer a {
             padding:3px;
         }
 } 
+
+@media only screen and (min-width:1101px){
+    .contender {
+        max-width: 70%;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container-box {
+        width: 50%;
+        padding: 30px;
+    }
+    
+    #reservation{
+        font-size: 20px;
+    }
+}
