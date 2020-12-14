@@ -45,12 +45,67 @@
     float: right;
     margin: 15px 15px;
  }
+
+ /* Body */
+
+ .btn1 {
+    background-color: blueviolet;
+    color: #f1f1f1;
+    width: 80px;
+    height: 40px;
+}
+
+input{
+    height:6vh;
+    padding :10px;
+    border-top:1px solid grey;
+    width:25vw;
+
+}
+
+h1 {
+    color: blueviolet;
+}
+#btn2 > .btn {
+    width: 100px;
+    height: 80px;
+    border: 2px solid blueviolet;
+}
+.step > img {
+width: 500px;
+height: 200px;
+text-align: center;
+}
+
+.flex-container {
+position: relative;
+left: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+}
+  
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: max-content;
+    margin: 10px;
+}
+
+#imag > img {
+width: 1285px;
+height: 300px;
+}
 .img {
     text-align: center;
 }
 .all{
     width:95%;
 }
+
+.contain {
+    text-align: center;
+}
+
 .contender{
     margin:10vh auto;
     display:flex;
@@ -145,8 +200,8 @@ legend{
     margin-bottom:10px;
     color: grey;
 }
-.form-area input,
-.form-login input,
+.form-area,
+.form-login,
 #fname, #date, #email, #persons, #remarks {
     padding :10px;
     border-top:1px solid grey;
@@ -262,6 +317,23 @@ footer a {
 
 /* media queries */
 @media only screen and (max-width:750px){
+    #imag > img {
+        width: 100%;
+     }
+     
+     .flex-container {
+        position: relative;
+        left: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+          
+    .flex-container > div {
+        background-color: #f1f1f1;
+        width: max-content;
+        margin: 10px;
+        }
 
     .contender{
         display:flex;
@@ -313,6 +385,23 @@ footer a {
 }
 
 @media only screen and (min-width:751px) and (max-width:1100px){
+    #imag > img {
+        width: 100%;
+     }
+     
+     .flex-container {
+        position: relative;
+        left: 20%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+          
+    .flex-container > div {
+        background-color: #f1f1f1;
+        width: max-content;
+        margin: 10px;
+    }
         .images{
             width:35%;
         }
