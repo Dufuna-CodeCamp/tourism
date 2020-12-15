@@ -6,7 +6,7 @@ let persons =document.getElementById("persons");
 
 
 function nameFieldValidation(event){
-    let nameRegex = /^([a-zA-Z]{2,}) ([a-zA-Z]{2,})$/;
+    let nameRegex = /^([a-zA-Z0-9]+|[a-zA-Z0-9]+\s{1}[a-zA-Z0-9]{1,}|[a-zA-Z0-9]+\s{1}[a-zA-Z0-9]{3,}\s{1}[a-zA-Z0-9]{1,})$/;
     if(fname.value === ''){
         document.getElementById("error").innerHTML = "This field is required";
         event.preventDefault();

@@ -7,64 +7,63 @@
 
 /* The Header */
 .nav-section {
-    width: 95%;
+    width: 99%;
     margin: auto;
     overflow: hidden;
- }
- ul {
-    padding: 0;
-    margin: 0;
- }
+}
+ul {
+   padding: 0;
+   margin: 0;
+}
 
- header {
-    background:blueviolet;
-    color: white;
-    padding-top: 15px;
-    min-height: 2px;
- }
- header a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
- }
- header li {
-    display: inline;
-    padding:0 30px;
- }
- header #nav-logo {
-    float: left;
-    margin: 15px 15px;
- }
- header #nav-logo h2,
- header #nav-logo p {
-    margin:0;
-    padding:0;
-    color:white;
- }
- header nav {
-    float: right;
-    margin: 15px 15px;
- }
+header {
+   background:blueviolet;
+   color: white;
+   padding-top: 15px;
+   min-height: 2px;
+}
+header a {
+   color: white;
+   text-decoration: none;
+   font-size: 16px;
+}
+header li {
+   display: inline;
+   padding:0 30px;
+}
+header #nav-logo {
+   float: left;
+   margin: 15px 15px;
+}
+header #nav-logo h2,
+header #nav-logo p {
+   margin:0;
+   padding:0;
+   color:white;
+}
+header nav {
+   float: right;
+   margin: 15px 15px;
+}
 
- .tour{
-    font-size: 30px;
- }
+.tour{
+   font-size: 30px;
+}
 
- /* Body */
+/* Body */
 
- .btn1 {
+.btn1 {
     background-color: blueviolet;
     color: #f1f1f1;
     width: 80px;
     height: 40px;
 }
 
-input{
+.int{
     height:6vh;
     padding :10px;
     border-top:1px solid grey;
     width:25vw;
-
 }
 
 h1 {
@@ -76,17 +75,17 @@ h1 {
     border: 2px solid blueviolet;
 }
 .step > img {
-width: 500px;
-height: 200px;
-text-align: center;
+    width: 100%;
+    height: 200px;
+    text-align: center;
 }
 
 .flex-container {
-position: relative;
-left: 120px;
     display: flex;
     flex-wrap: wrap;
     max-width: 90%;
+    margin: auto;
+    justify-content: space-evenly;
 }
   
 .flex-container > div {
@@ -96,7 +95,7 @@ left: 120px;
 }
 
 #imag > img {
-width: 1285px;
+width: 100%;
 height: 300px;
 }
 .img {
@@ -201,16 +200,16 @@ legend{
 }
 .form-area label,
 .form-login label{
-    margin-bottom:10px;
+    margin:10px 0;
+    padding: 5px;
     color: grey;
 }
-.form-area,
-.form-login,
-#fname, #date, #email, #persons, #remarks {
+
+
+#fname, #date, #email, #persons, #remarks, #pswrd, #letter {
     padding :10px;
     border-top:1px solid grey;
     border-radius: 10px;
-    width:25vw;
 }
 
 .checkbox{
@@ -229,14 +228,26 @@ legend{
     padding: 10px;
 }
 
-.submit{
+.reservation a{
+    color: white;
+}
+
+/* .submit{
+    font-size:15px;
+    padding:5px;
+} */
+.submit, #submit{
     border:none;
     background-color: blueviolet;
     color:white;
+    border-radius: 10px;
     font-weight: 700;
-    font-size:20px;
+    font-size: 15px;
     margin-top: 5px;
+    padding:5px;
 }
+
+
 .tandc{
     color:grey;
 }
@@ -253,9 +264,10 @@ legend{
     color: red;
 }
 /* tourist center list */
-.container-center img{
-    height: 140px;
+.container-center img {
+    height: 166px;
     padding: 10px;
+    width: 100%;
 }
 
 .container-center h2{
@@ -265,6 +277,7 @@ legend{
     display: flex;
     flex-direction: column;
     width: 90%;
+    margin: auto;
 }
 .images-container{
     width: 100%;
@@ -275,7 +288,6 @@ legend{
     vertical-align: middle;
 }
 .small-container-center button{
-    float: right;
     padding: 5px 20px;
     margin: 5px;
     border: 1px solid transparent;
@@ -337,29 +349,34 @@ hr{
     margin:2vh auto;
     max-width: 90%;
     display:flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     border-radius:3px;
     box-shadow:5px 5px 20px;
 }
 
 .small-image img{
     width: 100%;
+    height: 400px;
 }
-.center-image img{
+/* .center-image img{
     width: 100%;
-}
+} */
 
-.small-hotel img{
-    height: 200px;
+.small-hotel img {
+    max-width: 100%;
+    height: 118px;
+
 }
 .container-hotel{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
 }
 
 .small-hotel{
-    width: 90%;
+    /* width: 100%; */
     margin: 10px;
     border: 1px solid lightblue;
     background-color: #fff;
@@ -370,7 +387,12 @@ hr{
 
 .main-container a{
     text-decoration: none;
-    color: white;
+    font-size: 20px;
+}
+
+.main-container a:hover{
+    text-decoration: underline;
+    
 }
 
 
@@ -380,7 +402,6 @@ hr{
     border:none;
     border-radius: 5px;
     background-color: blueviolet;
-    color:white;
     font-weight: bold;
     font-size:10px;
     padding: 10px;
@@ -389,89 +410,77 @@ hr{
 footer a {
     color: white;
     text-decoration: none;
- }
- .error-message {
-    color: red;
-    font-size: 0.8em;
-    display: block;
- }
+}
+.error-message {
+   color: red;
+   font-size: 0.8em;
+   display: block;
+}
 
- footer  {
-    background-color:blueviolet;
-    overflow: hidden;
-    padding: 15px 0 0 20px;
-   
- }
- 
- .footer {
-    float: left;
-    width: 33.33%;
-    font-weight: lighter;
- }
+footer  {
+   background-color:blueviolet;
+   overflow: hidden;
+   padding: 15px 0 0 20px;
+  
+}
 
- .footer li {
-    padding:5px;
-    font-weight: lighter;
-    list-style-type: none;
- }
+.footer {
+   /* float: left;
+   width: 33.33%; */
+   font-weight: lighter;
+}
 
- .insta {
-     width: 40px;
- }
- .footer p {
+.footer li {
+   padding:5px;
+   font-weight: lighter;
+   list-style-type: none;
+}
+
+.insta {
+    width: 40px;
+}
+.footer p {
+   color: white;
+   font-weight: lighter;
+   padding-left: 50px;
+   display: block;
+}
+.logo li {
+   list-style-type: none;
+   padding: 2px;
+   border-radius: 10px;
+   display: inline-grid;
+   margin: 0 10px;
+}
+
+.info {
+   position: absolute;
+   left: 300px;
+  
+}
+
+footer nav {
+   overflow: hidden;
+}
+
+footer form button[type=submit] {
+   border-radius: 0;
+   background-color: white;
+   color: black;
+   padding: 5px;
+}
+
+.kt{
     color: white;
-    font-weight: lighter;
-    padding-left: 50px;
-    display: block;
- }
- .logo li {
-    list-style-type: none;
-    padding: 2px;
-    border-radius: 10px;
-    display: inline-grid;
-    margin: 0 10px;
- }
-
- .info {
-    position: absolute;
-    left: 300px;
-   
- }
-
- footer nav {
-    overflow: hidden;
- }
-
- footer form button[type=submit] {
-    border-radius: 0;
-    background-color: white;
-    color: black;
-    padding: 5px;
- }
-
- .kt{
-     color: white;
- }
+}
 
 /* media queries */
-@media only screen and (max-width:750px){
-    #imag > img {
-        width: 100%;
-     }
-     
-     .flex-container {
-        position: relative;
-        left: 120px;
-        display: flex;
-        flex-wrap: wrap;
-        width: 80%;
-    }
-          
+@media only screen and (max-width:750px){    
     .flex-container > div {
         background-color: #f1f1f1;
         width: max-content;
         margin: 10px;
-        }
+    }
 
     .contender{
         display:flex;
@@ -501,17 +510,14 @@ footer a {
     .form-login h2{
         text-align:center;
     }
-    .form-area .submit,
-    .form-login input,
+    
+
     #fname, #date, #email, #persons, #remarks, #pswrd {
         width:95%;
         border-radius:10px;
         box-shadow:0  0.5px gray ;
     }
-    .submit{
-        font-size:15px;
-        padding:5px;
-    }
+    
     .checkbox{
         box-shadow: none;
     }
@@ -525,120 +531,108 @@ footer a {
 @media only screen and (min-width:751px) and (max-width:1100px){
     #imag > img {
         width: 100%;
-     }
-     
-     .flex-container {
-        position: relative;
-        left: 20%;
+    }
+    
+    .images{
+        width:35%;
+    }
+    .images blockquote{
+        text-align:center;
+        margin-top:1vh;
+    }
+    .images legend{
+        text-align: center;
+
+    }
+    .contender {
+        max-width: 70%;
+    }
+    .form-area{
+     margin-left:20px;
+     width:60%;
+    }
+    .container{
         display: flex;
         flex-wrap: wrap;
-        width: 80%;
     }
-          
-    .flex-container > div {
-        background-color: #f1f1f1;
-        width: max-content;
-        margin: 10px;
+    .container-box {
+        width: 50%;
+        padding: 30px;
     }
-        .images{
-            width:35%;
-        }
-        .images blockquote{
-            text-align:center;
-            margin-top:1vh;
-        }
-        .images legend{
-            text-align: center;
+    .form-area .submit,
+    .form-login input,
+    #fname, #date, #email, #persons, #remarks, #pswd {
+        width:90%;
+        border-radius: 10px;
+        width: 25vw;
+    }
+    .form-area h2, .form-area p,
+    .form-login h2, .form-login p{
+        text-align: center;
+        width:100%;
+    }
 
-        }
-        .contender {
-            max-width: 70%;
-        }
-        .form-area{
-         margin-left:20px;
-         width:60%;
-        }
-        .container{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .container-box {
-            width: 50%;
-            padding: 30px;
-        }
-        .form-area .submit,
-        .form-login input,
-        #fname, #date, #email, #persons, #remarks, #pswd {
-            width:90%;
-            border-radius: 10px;
-        }
-        .form-area h2, .form-area p,
-        .form-login h2, .form-login p{
-            text-align: center;
-            width:100%;
-        }
+    #reservation{
+        font-size: 20px;
+    }
 
-        #reservation{
-            font-size: 20px;
-        }
+    .second-image{
+        width:100%;
+        height:20vh;
+    }
+    blockquote{
+        width:100%;
+    }
+    .submit, #submit{
+        font-size: 20px;
+        padding:3px;
+    }
+    .image-container{
+        margin:10vh auto;
+    }
+    
+    .small-image img {
+        width: 49%;
+        height: 400px;
+    }
+   
+    .main-container .reservation{
+        font-size:20px;
+    }  
 
-        .second-image{
-            width:100%;
-            height:20vh;
-        }
-        blockquote{
-            width:100%;
-        }
-        .submit{
-            font-size: 15px;
-            padding:3px;
-        }
-        .image-container{
-            margin:10vh auto;
-            max-width: 90%;
-            display:flex;
-            flex-direction: row;
-            border-radius:3px;
-            box-shadow:5px 5px 20px;
-        }
-        
-       
-        .container-hotel{
-            flex-direction: row;
-            width: fit-content;
-        }
-        
-        .small-hotel{
-            width: 40%;
-            margin: 10px;
-            border: 1px solid lightblue;
-            background-color: #fff;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            border-radius: 5px;
-            text-align: center;
-        }
-        .main-container .reservation{
-            font-size:20px;
-        }  
+    .container-center{
+        flex-direction: row;
+        width: 100%;
+    }
+    .images-container{
+        width: 30%;
+    }
+    .small-container-center {
+        padding-left: 20px;
+        width: 60%;
+    }
 
-        .small-image img{
-            width: 50%;
-        }
-        .center-image img{
-            width: 50%;
-        }
-        .container-center{
-            flex-direction: row;
-            width: 90%;
-        }
-        .images-container{
-            width: 30%;
-        }
-        .small-container-center {
-            padding-left: 20px;
-            width: 60%;
-        }
-} 
+    .small-hotel img{
+        height: 200px;
+    }
+
+    .small-container-center button {
+
+        float: right;
+   }
+
+    .step {
+       max-width: 40%;
+
+    }
+
+    .footer {
+        float: left;
+        width: 33.33%;
+        font-weight: lighter;
+     }
+
+}
 
 @media only screen and (min-width:1101px){
     .contender {
@@ -652,31 +646,37 @@ footer a {
         width: 50%;
         padding: 30px;
     }
+
+    .form-area,
+    .form-login,
+    #fname, #date, #email, #persons, #remarks {
+    width:25vw;
+    }
+
+    .submit, #submit {
+        font-size: 20px;
+    }
     
     #reservation{
         font-size: 20px;
     }
     .image-container{
         margin:10vh auto;
-        max-width: 90%;
-        display:flex;
-        flex-direction: row;
     }
     
+    .small-image img {
+        width: 49%;
+        height: 400px;
+    }
     .container-hotel{
         flex-direction: row;
         justify-content: space-evenly;
     }
     
-    .small-hotel{
-        width: 50%;
-        margin: 10px;
-    }
-
     .main-container .reservation{
         font-size:20px;
     }
-    .container-center{
+    .container-center {
         flex-direction: row;
         width: 90%;
     }
@@ -687,4 +687,23 @@ footer a {
         padding-left: 20px;
         width: 60%;
     }
+
+    .small-hotel img{
+        height: 200px;
+    }
+
+    .small-container-center button {
+        float: right;
+   }
+
+   .step {
+        max-width: 40%;
+    }
+
+    .footer {
+        float: left;
+        width: 33.33%;
+        font-weight: lighter;
+     }
+
 }
