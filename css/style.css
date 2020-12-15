@@ -5,52 +5,43 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
-/* The Header */
+/*********************** The Header *************************/
 .nav-section {
     width: 99%;
     margin: auto;
     overflow: hidden;
-}
-ul {
-   padding: 0;
-   margin: 0;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 header {
    background:blueviolet;
    color: white;
-   padding-top: 15px;
+   padding: 15px 10px;
    min-height: 2px;
 }
+
 header a {
    color: white;
    text-decoration: none;
-   font-size: 16px;
 }
-header li {
-   display: inline;
-   padding:0 30px;
+
+nav li a:hover{
+    background-color: white;
+    color: blueviolet;
+    padding: 5px 15px;
+    border-radius: 5px;
 }
-header #nav-logo {
-   float: left;
-   margin: 15px 15px;
-}
-header #nav-logo h2,
-header #nav-logo p {
-   margin:0;
-   padding:0;
-   color:white;
-}
-header nav {
-   float: right;
-   margin: 15px 15px;
+
+nav li {
+   padding: 5px 10px;
 }
 
 .tour{
    font-size: 30px;
 }
 
-/* Body */
+/********************** Body *************************/
 
 .btn1 {
     background-color: blueviolet;
@@ -95,12 +86,14 @@ h1 {
 }
 
 #imag > img {
-width: 100%;
-height: 300px;
+    width: 100%;
+    height: 400px;
 }
+
 .img {
     text-align: center;
 }
+
 .all{
     width:95%;
 }
@@ -116,20 +109,23 @@ height: 300px;
     box-shadow:5px 5px 20px;
     padding:50px;
 }
+
 .contender-login{
-    max-width: 50%;
+    max-width: 90%;
     margin:10vh auto;
     display:flex;
     border-radius:3px;
     box-shadow:5px 5px 20px;
     padding: 50px 10px;
 }
+
 .images{
     display: flex;
     flex-direction:column;
     width:50%;
 }
-.images blockquote{
+
+.images blockquote {
     color:grey;
     width: 60%;
     margin:30px auto;
@@ -137,19 +133,23 @@ height: 300px;
     opacity:0.7;
     margin-top: 10vh;
 }
-legend{
+
+legend {
     text-align:right;
     margin-top: 20px;
 }
-.second-image{
+
+.second-image {
     margin:0;
     width:100%;
     height:30vh;
     margin-top: 5vh;
 }
+
 .form-area{
     width:45%;
 }
+
 .form-area b,
 .form-login h2{
     color:blueviolet;
@@ -162,11 +162,13 @@ legend{
     color: blueviolet;
     text-align: center;
 }
+
 .form-area h2,
 .form-login h2{
     font-weight:500;
     text-align: center;
 }
+
 .form-area p,
 .form-login p{
     color:grey;
@@ -174,30 +176,36 @@ legend{
     margin-top:1vh;
     text-align: center;
 }
+
 .form-area,
 .form-login,
 .information{
     margin-top: 20px;
 }
+
 .form-area div,
 .form-login div{
     margin-bottom:10px;
     display:flex;
     flex-direction: column;
 }
+
 .container{
     margin-bottom: 10px;
     width: 100%;
 }
+
 .container-box {
     width: 100%;
     margin-bottom:10px;
     color: grey;
     padding: 10px;
 }
+
 .form-login{
     margin: auto;
 }
+
 .form-area label,
 .form-login label{
     margin:10px 0;
@@ -217,6 +225,7 @@ legend{
     margin-right:5px;
     width:15px;
 }
+
 #reservation{
     width: 100%;
     border:none;
@@ -244,23 +253,25 @@ legend{
     padding:5px;
 }
 
-
 .tandc{
     color:grey;
 }
+
 .tandc a{
     text-decoration: none;
     font-weight:300;
 }
+
 .information p {
     color: red;
     font-size: 15px;
     text-align: left;
 }
+
 .required{
     color: red;
 }
-/* tourist center list */
+/********************* tourist centers list *******************/
 .container-center img {
     height: 166px;
     padding: 10px;
@@ -270,6 +281,7 @@ legend{
 .container-center h2{
     color: grey;
 }
+
 .container-center{
     display: flex;
     flex-direction: column;
@@ -293,6 +305,7 @@ legend{
     color: white;
     font-size: 16px;
 }
+
 .small-container-center a{
     text-decoration: none;
     color: white;
@@ -301,20 +314,25 @@ legend{
 .small-container-center a:hover{
    font-size: 19px;
 }
-/* tourist centers */
+
+/********************** tourist centers ********************/
 .main-img img{
     width: 100%;
     height: 500px;
 }
+
 .packages ul{
     padding-left: 5px;
 }
+
 .packages li{
     padding-left: 15px;
 }
+
 .main-container p{
     padding: 2px 10px;
 }
+
 .main-container h1{
     padding: 12px 5px;
     color: rgb(128 128 128)
@@ -325,6 +343,7 @@ legend{
     padding: 12px 0 5px;
     color: rgb(128 128 128);
 }
+
 .main-container h3{
     color: rgb(128 128 128);
 }
@@ -361,6 +380,7 @@ hr{
     height: 118px;
 
 }
+
 .container-hotel{
     display: flex;
     flex-wrap: wrap;
@@ -383,11 +403,6 @@ hr{
     font-size: 20px;
 }
 
-.main-container a:hover{
-    text-decoration: underline;
-}
-
-
 .main-container .reservation{
     margin: 10px 0;
     width: 100%;
@@ -399,7 +414,11 @@ hr{
     padding: 10px;
 }
 
-/* Footer */
+.contain img{
+    max-width: 100%;
+}
+
+/************************ Footer **********************/
 footer a {
     color: white;
     text-decoration: none;
@@ -413,31 +432,34 @@ footer a {
 footer  {
    background-color:blueviolet;
    overflow: hidden;
-   padding: 15px 0 0 20px;
+   /* padding: 15px 0 0 20px; */
   
 }
 
-.footer {
-   /* float: left;
-   width: 33.33%; */
-   font-weight: lighter;
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: auto;
+    padding: 15px;
+    font-weight: lighter;
+}
+
+.foot li{
+    padding-bottom: 5px;
 }
 
 .footer li {
-   padding:5px;
-   font-weight: lighter;
    list-style-type: none;
 }
 
+.footer{
+    padding: 10px 0;
+}
 .insta {
     width: 40px;
 }
-.footer p {
-   color: white;
-   font-weight: lighter;
-   padding-left: 50px;
-   display: block;
-}
+
 .logo li {
    list-style-type: none;
    padding: 2px;
@@ -456,8 +478,12 @@ footer nav {
    overflow: hidden;
 }
 
+footer p{
+    text-align: center;
+}
+
 footer form button[type=submit] {
-   border-radius: 0;
+   border-radius: 10px;
    background-color: white;
    color: black;
    padding: 5px;
@@ -467,14 +493,8 @@ footer form button[type=submit] {
     color: white;
 }
 
-/* media queries */
+/************************* media queries **********************/
 @media only screen and (max-width:750px){    
-    .flex-container > div {
-        background-color: #f1f1f1;
-        width: max-content;
-        margin: 10px;
-    }
-
     .contender{
         display:flex;
         flex-direction: column;
@@ -488,14 +508,15 @@ footer form button[type=submit] {
         display: none;
     }
     .second-image{
-        width:100%;
         height:10vh;
         margin: 10px  auto;
     }
+
     .images{
         width:100%;
 
     }
+
     .form-area{
         width:100%;
     }
@@ -509,14 +530,20 @@ footer form button[type=submit] {
     .checkbox{
         box-shadow: none;
     }
-    .form-area p,
-    .form-login p{
-        text-align: center;
-        width: 100%;
-    }
+    
 }
 
-@media only screen and (min-width:751px) and (max-width:1100px){
+@media only screen and (min-width:751px) {
+    nav li {
+        display: inline;
+        float: right;
+        padding: 5px 30px;
+    }
+    header nav {
+        
+        margin: 15px 15px;
+    }
+
     #imag > img {
         width: 100%;
     }
@@ -524,36 +551,47 @@ footer form button[type=submit] {
     .images{
         width:35%;
     }
+
     .images blockquote{
         text-align:center;
         margin-top:1vh;
     }
+
     .images legend{
         text-align: center;
 
     }
+
     .contender {
         max-width: 70%;
     }
+
+    .contender-login {
+        max-width: 50%;
+    }
+
     .form-area{
      margin-left:20px;
      width:60%;
     }
+
     .container{
         display: flex;
         flex-wrap: wrap;
     }
+
     .container-box {
         width: 50%;
         padding: 30px;
     }
     .form-area .submit,
     .form-login input,
-    #fname, #date, #email, #persons, #remarks, #pswd {
+    #fname, #date, #email, #persons, #remarks, #pswrd {
         width:90%;
         border-radius: 10px;
         width: 25vw;
     }
+
     .form-area h2, .form-area p,
     .form-login h2, .form-login p{
         text-align: center;
@@ -568,13 +606,16 @@ footer form button[type=submit] {
         width:100%;
         height:20vh;
     }
+
     blockquote{
         width:100%;
     }
-    .submit, #submit{
+
+    .submit {
         font-size: 20px;
         padding:3px;
     }
+
     .image-container{
         margin:10vh auto;
     }
@@ -592,9 +633,11 @@ footer form button[type=submit] {
         flex-direction: row;
         width: 100%;
     }
+
     .images-container{
         width: 30%;
     }
+    
     .small-container-center {
         padding-left: 20px;
         width: 60%;
@@ -605,92 +648,16 @@ footer form button[type=submit] {
     }
 
     .small-container-center button {
-
         float: right;
    }
 
     .step {
        max-width: 40%;
-
     }
 
     .footer {
-        float: left;
         width: 33.33%;
-        font-weight: lighter;
-     }
+    }
 
 }
 
-@media only screen and (min-width:1101px){
-    .contender {
-        max-width: 70%;
-    }
-    .container{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .container-box {
-        width: 50%;
-        padding: 30px;
-    }
-
-    .form-area,
-    .form-login,
-    #fname, #date, #email, #persons, #remarks {
-    width:25vw;
-    }
-
-    .submit, #submit {
-        font-size: 20px;
-    }
-    
-    #reservation{
-        font-size: 20px;
-    }
-    .image-container{
-        margin:10vh auto;
-    }
-    
-    .small-image img {
-        width: 49%;
-        height: 400px;
-    }
-    .container-hotel{
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    
-    .main-container .reservation{
-        font-size:20px;
-    }
-    .container-center {
-        flex-direction: row;
-        width: 90%;
-    }
-    .images-container{
-        width: 40%;
-    }
-    .small-container-center {
-        padding-left: 20px;
-        width: 60%;
-    }
-
-    .small-hotel img{
-        height: 200px;
-    }
-
-    .small-container-center button {
-        float: right;
-   }
-
-   .step {
-        max-width: 40%;
-    }
-
-    .footer {
-        float: left;
-        width: 33.33%;
-        font-weight: lighter;
-    }
-}
