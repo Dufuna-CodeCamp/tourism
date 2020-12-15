@@ -46,6 +46,10 @@
     margin: 15px 15px;
  }
 
+ .tour{
+    font-size: 30px;
+ }
+
  /* Body */
 
  .btn1 {
@@ -248,6 +252,46 @@ legend{
 .required{
     color: red;
 }
+/* tourist center list */
+.container-center img{
+    height: 140px;
+    padding: 10px;
+}
+
+.container-center h2{
+    color: grey;
+}
+.container-center{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.images-container{
+    width: 100%;
+}
+.small-container-center {
+    padding: 20px;
+    width: 100%;
+    vertical-align: middle;
+}
+.small-container-center button{
+    float: right;
+    padding: 5px 20px;
+    margin: 5px;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 16px;
+}
+.small-container-center a{
+    text-decoration: none;
+    color: white;
+}
+
+.small-container-center a:hover{
+   font-size: 19px;
+}
 /* tourist centers */
 .main-img img{
     width: 100%;
@@ -326,6 +370,7 @@ hr{
 
 .main-container a{
     text-decoration: none;
+    color: white;
 }
 
 
@@ -582,6 +627,17 @@ footer a {
         .center-image img{
             width: 50%;
         }
+        .container-center{
+            flex-direction: row;
+            width: 90%;
+        }
+        .images-container{
+            width: 30%;
+        }
+        .small-container-center {
+            padding-left: 20px;
+            width: 60%;
+        }
 } 
 
 @media only screen and (min-width:1101px){
@@ -605,8 +661,6 @@ footer a {
         max-width: 90%;
         display:flex;
         flex-direction: row;
-        border-radius:3px;
-        box-shadow:5px 5px 20px;
     }
     
     .container-hotel{
@@ -617,14 +671,20 @@ footer a {
     .small-hotel{
         width: 50%;
         margin: 10px;
-        border: 1px solid lightblue;
-        background-color: #fff;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
-        text-align: center;
     }
 
     .main-container .reservation{
         font-size:20px;
+    }
+    .container-center{
+        flex-direction: row;
+        width: 90%;
+    }
+    .images-container{
+        width: 40%;
+    }
+    .small-container-center {
+        padding-left: 20px;
+        width: 60%;
     }
 }
