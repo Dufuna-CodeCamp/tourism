@@ -232,11 +232,8 @@ legend{
     color: white;
 }
 
-/* .submit{
-    font-size:15px;
-    padding:5px;
-} */
-.submit, #submit{
+
+.submit {
     border:none;
     background-color: blueviolet;
     color:white;
@@ -358,9 +355,6 @@ hr{
     width: 100%;
     height: 400px;
 }
-/* .center-image img{
-    width: 100%;
-} */
 
 .small-hotel img {
     max-width: 100%;
@@ -372,7 +366,6 @@ hr{
     flex-wrap: wrap;
     max-width: 100%;
     justify-content: space-evenly;
-    /* flex-direction: column; */
 }
 
 .small-hotel{
@@ -392,7 +385,6 @@ hr{
 
 .main-container a:hover{
     text-decoration: underline;
-    
 }
 
 
@@ -406,6 +398,7 @@ hr{
     font-size:10px;
     padding: 10px;
 }
+
 /* Footer */
 footer a {
     color: white;
@@ -506,11 +499,6 @@ footer form button[type=submit] {
     .form-area{
         width:100%;
     }
-    .form-area h2,
-    .form-login h2{
-        text-align:center;
-    }
-    
 
     #fname, #date, #email, #persons, #remarks, #pswrd {
         width:95%;
@@ -704,6 +692,5 @@ footer form button[type=submit] {
         float: left;
         width: 33.33%;
         font-weight: lighter;
-     }
-
+    }
 }
