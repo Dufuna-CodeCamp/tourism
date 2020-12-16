@@ -36,7 +36,7 @@ function emailFieldValidation(event){
 }
 
 function passwordFieldValidation(event) {
-    let tpattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,10}$/;
+    let tpattern = /(?=.*\d)(?=.*[a-z])(?=.*[a-zA-Z]).{6,}$/;
     if(password.value === ''){
         document.getElementById("valid3").innerHTML = "This field is required";
         event.preventDefault();
